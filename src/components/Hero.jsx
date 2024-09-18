@@ -10,8 +10,8 @@ const Hero = () => {
       <div className="container">
         <div className="block sm:flex justify-between items-center h-full space-y-10 sm:space-y-0">
           {/* Left Side */}
-          <div className="w-[58%] relative">
-            <h1 className="text-4xl sm:text-7xl lg:text-[100px] whitespace-nowrap text-white">
+          <div className="sm:w-[58%] relative">
+            <h1 className="text-4xl sm:text-7xl lg:text-[100px] sm:whitespace-nowrap text-white">
               <span className="block">Hello!</span> I’m Zarror Nibors
             </h1>
             <p className=" text-base sm:text-[1.8rem] sm:leading-normal pb-[50px] text-white">
