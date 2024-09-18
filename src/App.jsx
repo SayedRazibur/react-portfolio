@@ -1,8 +1,14 @@
+import Hero from "./components/Hero";
+import Nav from "./components/Nav";
+
 const App = () => {
   return (
-    <div>
-      <h1 className="bg-amber-700">hello</h1>
-    </div>
+    <>
+      <header>
+        <Nav />
+        <Hero />
+      </header>
+    </>
   );
 };
 

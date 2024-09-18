@@ -3,11 +3,18 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      colors: {
+        richBlack: "#00413D",
+        terraCotta: "#E5745D",
+      },
       container: {
-        center: true, // Center the container horizontally
+        center: true,
+        padding: "1rem",
       },
       screens: {
-        lg: "1170px", // Set the max-width for large screens
+        lg: "1170px",
+        xl: "1170px",
+        "2xl": "1170px",
       },
     },
   },

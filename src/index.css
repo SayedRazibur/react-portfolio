@@ -1,3 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply text-lg leading-[12px] px-[29px] py-[21px] text-white bg-terraCotta border border-white outline outline-terraCotta outline-4 transition-all duration-300 ease-in-out inline-block;
+
+    /* Hover effect */
+    &:hover {
+      @apply bg-white text-terraCotta border-terraCotta outline-none;
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Active or Focus state */
+    &:focus,
+    &:active {
+      @apply outline-white;
+      transform: scale(0.98);
+    }
+  }
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  color: #00413d;
+  font-family: "Jost", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Vollkorn", serif;
+}
