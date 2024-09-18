@@ -4,7 +4,7 @@ import shapeImage from "../assets/shape.png";
 const Hero = () => {
   return (
     <section
-      className=" w-full md:h-[90vh] bg-[#00413d] py-14"
+      className=" w-full md:h-[90vh] bg-[#00413d] py-14 sm:py-0"
       style={{ backgroundImage: `url(${shapeImage})` }}
     >
       <div className="container">
