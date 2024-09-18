@@ -19,7 +19,7 @@ const Hero = () => {
               to craft attractive design experiences for the web.
             </p>
             <a href="#services" className="btn">
-              Learn More
+              Learn More...
             </a>
           </div>
 
