@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply text-lg text-white font-medium leading-none bg-secondary py-4 px-6 md:py-[21px] md:px-[39px] border border-white  outline outline-secondary outline-[5px] inline-block;
+  }
+  .testimonial_shadow {
+    filter: drop-shadow(6px 6px 10px rgba(227, 40, 71, 0.08));
+  }
+  
+  .form_input {
+    @apply placeholder:text-[18px] placeholder:font-normal placeholder:text-primary_text/[.70] placeholder:opacity-70 placeholder:pl-1;
+  }
+  .out_line {
+    @apply outline outline-none  border-b-[2px] border-[#00413D/0.1];
+  }
+  .after_before {
+    @apply  after:content-[''] after:absolute after:w-10 after:h-[2px] after:bg-secondary after:right-[calc(100%+12px)]  after:bottom-[22px] before:content-[''] before:absolute before:w-[6px] before:h-[6px] before:bg-secondary before:right-[calc(100%+11px)]  before:bottom-[20px] before:rounded-full;
+  }
+}
+
+body {
+  font-family: "Jost", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Vollkorn", serif;
+}
+
+p {
+  @apply text-base text-primary_text leading-normal;
+}
+
+.shape::after {
+  position: absolute;
+  content: "";
+  height: 0;
+  width: 0;
+  background: transparent;
+  border-top: 25px solid #ffffff;
+  border-right: 20px solid transparent;
+  border-bottom: 0 solid transparent;
+  border-left: 11px solid transparent;
+  bottom: 0;
+  left: 88px;
+  transform: translateY(100%);
+}
+
+
